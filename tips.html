@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tips - Janguard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+</head>
+
+<body>
+    <nav class="custom-navbar">
+        <div class="brand">
+            <img src="img/logo.png" alt="Janguard Logo" />
+        </div>
+        <button class="hamburger">&#9776;</button>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="tips.html" class="nav-link active">Tips</a>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="register.html" class="register-button">Register</a>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="tips-section">
+            <h1>Cybersecurity Tips</h1>
+
+            <div class="tip-category">
+                <h2>Software Updates</h2>
+                <p>Keeping your software up to date is crucial to protecting against the latest threats and
+                    vulnerabilities.</p>
+                <ul>
+                    <li>Enable automatic updates whenever possible.</li>
+                    <li>Regularly check for updates for your operating system, browsers, and applications.</li>
+                    <li>Avoid using outdated or unsupported software.</li>
+                    <li>Use trusted sources for downloading updates.</li>
+                </ul>
+            </div>
+
+            <div class="tip-category">
+                <h2>Phishing Awareness</h2>
+                <p>Phishing attacks aim to trick users into revealing personal or sensitive information. Stay alert with
+                    these tips:</p>
+                <ul>
+                    <li>Be cautious with emails from unknown senders.</li>
+                    <li>Look for spelling and grammar mistakes in suspicious messages.</li>
+                    <li>Never click on suspicious links or attachments.</li>
+                    <li>Verify the URL before logging in to any website.</li>
+                    <li>Report phishing attempts to your IT department or provider.</li>
+                </ul>
+            </div>
+
+            <div class="tip-category">
+                <h2>Safe Browsing Practices</h2>
+                <p>Browsing the internet safely helps prevent malware infections and data theft. Here are a few
+                    reminders:</p>
+                <ul>
+                    <li>Use a secure and updated browser.</li>
+                    <li>Install ad blockers and antivirus plugins.</li>
+                    <li>Look for HTTPS before entering sensitive information.</li>
+                    <li>Clear your cache and cookies regularly.</li>
+                    <li>Avoid using public Wi-Fi for transactions or logins.</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <p>Want to learn more about staying safe online?</p>
+                <a href="register.html" class="action-button">Explore More Tips & Join Our Community</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img id="footer-logo" src="img/logo.png" alt="Footer Logo" />
+        <p>&copy; 2025 Janguard Cybersecurity. All rights reserved.</p>
+        <p>Web Designer: Janyrose G. Guelas<br>Email: janyxgarcia@gmail.com</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Janguard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="custom-navbar">
+        <div class="brand">
+            <img src="img/logo.png" alt="Janguard Logo" />
+        </div>
+        <button class="hamburger">&#9776;</button>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="tips.html" class="nav-link">Tips</a>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="register.html" class="register-button">Register</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Janguard — Your Cybersecurity Partner</h1>
+            <p>Protecting your digital world through innovation, trust, and top-tier solutions.</p>
+            <a href="services.html" class="action-button">Explore Our Services</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <img src="img/image1.jfif" alt="Monitoring" />
+            <h2>Real-Time Threat Monitoring</h2>
+            <p>Stay one step ahead of cybercriminals with live monitoring and instant alerts.</p>
+        </div>
+        <div class="feature">
+            <img src="img/image2.jpg" alt="Custom Security" />
+            <h2>Custom Security Solutions</h2>
+            <p>We tailor cybersecurity systems to your personal, educational, or business needs.</p>
+        </div>
+        <div class="feature">
+            <img src="img/image3.jpg" alt="Expert Support" />
+            <h2>Expert Support</h2>
+            <p>Our cybersecurity professionals are ready to assist 24/7 with any issue.</p>
+        </div>
+        <div class="feature">
+            <img src="img/image4.jpg" alt="Data Privacy" />
+            <h2>Data Privacy Audits</h2>
+            <p>Ensure your data is protected and compliant with the latest global standards.</p>
+        </div>
+        <div class="feature">
+            <img src="img/image5.webp" alt="Cyber Training" />
+            <h2>Cyber Awareness Training</h2>
+            <p>Empower your team with essential knowledge to prevent cyberattacks.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Need Cybersecurity Help?</h2>
+        <p>Our team is here to protect your data and digital identity. Contact us today or sign up now!</p>
+        <a href="register.html" class="action-button">Create Your Account</a>
+    </section>
+
+    <section class="contact-section">
+        <h2>Connect With Us</h2>
+        <p>Stay updated, send us a DM, or just say hi — we're always online!</p>
+        <div class="contact-details">
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/janguard" target="_blank">@janguard</a></p>
+            <p><strong>TikTok:</strong> <a href="https://tiktok.com/@janguard" target="_blank">@janguard</a></p>
+            <p><strong>Facebook:</strong> <a href="https://facebook.com/janguard"
+                    target="_blank">facebook.com/janguard</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img id="footer-logo" src="img/logo.png" alt="Footer Logo" />
+        <p>&copy; 2025 Janguard Cybersecurity. All rights reserved.</p>
+        <p>Web Designer: Janyrose G. Guelas</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
+

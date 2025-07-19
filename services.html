@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Janguard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+</head>
+
+<body>
+    <nav class="custom-navbar">
+        <div class="brand">
+            <img src="img/logo.png" alt="Janguard Logo" />
+        </div>
+        <button class="hamburger">&#9776;</button>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link active">Services</a>
+            <a href="tips.html" class="nav-link">Tips</a>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="register.html" class="register-button">Register</a>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="services-section">
+            <h1>Our Services</h1>
+
+            <div class="team-grid">
+                <div class="service-card">
+                    <h2 class="service-title">Cybersecurity Training</h2>
+                    <p class="service-description">
+                        We offer comprehensive cybersecurity training for individuals, companies, and IT professionals.
+                        Learn threat detection, response, and best practices for data safety.
+                    </p>
+                    <ul class="service-list">
+                        <li>Cybersecurity Basics</li>
+                        <li>Advanced Threat Monitoring</li>
+                        <li>Incident Response Simulation</li>
+                    </ul>
+                    <a href="register.html" class="service-button">Book a Consultation</a>
+                </div>
+
+                <div class="service-card">
+                    <h2 class="service-title">Software Solutions</h2>
+                    <p class="service-description">
+                        Secure your systems with our custom-built cybersecurity software. From endpoint protection to
+                        encryption, we’ve got you covered.
+                    </p>
+                    <ul class="service-list">
+                        <li>Firewall Installation & Maintenance</li>
+                        <li>Encryption Software Deployment</li>
+                        <li>Real-Time Monitoring Tools</li>
+                    </ul>
+                    <a href="register.html" class="service-button">Book a Consultation</a>
+                </div>
+
+                <div class="service-card">
+                    <h2 class="service-title">Consultation Services</h2>
+                    <p class="service-description">
+                        Get expert advice tailored to your company’s cybersecurity needs. Available for both startups
+                        and enterprises.
+                    </p>
+                    <p class="service-hours"><strong>Available Hours:</strong> Mon–Fri, 9:00 AM – 5:00 PM</p>
+                    <a href="register.html" class="service-button">Book a Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img id="footer-logo" src="img/logo.png" alt="Footer Logo" />
+        <p>&copy; 2025 Janguard Cybersecurity. All rights reserved.</p>
+        <p>Web Designer: Janyrose G. Guelas<br>Email: janyxgarcia@gmail.com</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>

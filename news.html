@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - Janguard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+</head>
+
+<body>
+    <nav class="custom-navbar">
+        <div class="brand">
+            <img src="img/logo.png" alt="Janguard Logo" />
+        </div>
+        <button class="hamburger">&#9776;</button>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="tips.html" class="nav-link">Tips</a>
+            <a href="news.html" class="nav-link active">News</a>
+            <a href="register.html" class="register-button">Register</a>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="news-hero">
+            <h1>Stay Updated with Janguard</h1>
+            <p>Get the latest cybersecurity news, company insights, and upcoming webinars.</p>
+        </section>
+
+        <section class="news-gallery">
+            <article class="news-card">
+                <h2>Singapore Infrastructure Targeted</h2>
+                <p>Singapore says a cyber espionage group was behind attacks on critical infrastructure.</p>
+                <a href="https://www.reuters.com/world/china/singapore-says-cyber-espionage-group-targeting-critical-infrastructure-2025-07-18/"
+                    target="_blank" class="action-button">Read More</a>
+            </article>
+
+            <article class="news-card">
+                <h2>Silent FileFix Attack Emerges</h2>
+                <p>Check Point warns of a deceptive clipboard malware trick dubbed “FileFix.”</p>
+                <a href="https://www.itpro.com/security/a-new-silent-social-engineering-attack-is-being-used-by-hackers-and-your-security-systems-might-not-notice-until-its-too-late"
+                    target="_blank" class="action-button">Read More</a>
+            </article>
+
+            <article class="news-card">
+                <h2>US National Guard Hacked by China-linked Group</h2>
+                <p>A Chinese cyber‑espionage group known as Salt Typhoon allegedly breached National Guard networks.</p>
+                <a href="https://www.reuters.com/world/us/us-national-guard-unit-was-extensively-hacked-by-salt-typhoon-2024-memo-says-2025-07-15/"
+                    target="_blank" class="action-button">Read More</a>
+            </article>
+        </section>
+
+        <section class="news-updates">
+            <h2>Janguard Coming Updates</h2>
+            <div class="news-carousel">
+                <div class="news-item">
+                    <h3>Firewall Upgrade 3.0 Released</h3>
+                    <p>Our latest firewall version now offers advanced intrusion detection with AI assistance.</p>
+                </div>
+                <div class="news-item">
+                    <h3>Janguard Partners with EDUSEC</h3>
+                    <p>A new partnership to improve cybersecurity in online learning platforms.</p>
+                </div>
+                <div class="news-item">
+                    <h3>Mobile Security Tools Coming Soon</h3>
+                    <p>We’re expanding our mobile app protection solutions — stay tuned for updates!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-subscribe">
+            <h2>Webinars & Training</h2>
+            <p>Subscribe now to gain exclusive access to our cybersecurity webinars and learning resources.</p>
+            <a href="#" class="action-button">Subscribe</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img id="footer-logo" src="img/logo.png" alt="Footer Logo" />
+        <p>&copy; 2025 Janguard Cybersecurity. All rights reserved.</p>
+        <p>Web Designer: Janyrose G. Guelas<br />Email: janyxgarcia@gmail.com</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
+

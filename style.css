@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    background-color: #121212;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.brand img {
+    height: 40px;
+    width: auto;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #00fff7;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #00fff7;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    opacity: 1;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00fff7;
+}
+
+.register-button {
+    background-color: #00fff7;
+    color: #000;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #00b383;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('img/desk1 2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #00fff7;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    background-color: #00fff7;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #00b383;
+}
+
+/* FEATURES SECTION */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: #161b22;
+    text-align: center;
+}
+
+.feature {
+    background-color: #0d1117;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    /* fixed width for even layout */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.feature h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.feature:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* CTA SECTION */
+.cta {
+    padding: 60px 20px;
+    background-color: #0d0d0d;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 28px;
+    font-family: 'Orbitron', sans-serif;
+    color: #00fff7;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00fff7;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    color: #ccc;
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 25px;
+    color: #888888;
+}
+
+#footer-logo {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .custom-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: flex-end;
+        font-size: 32px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-link,
+    .register-button {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .register-button {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 8px 24px;
+        border-radius: 50px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}

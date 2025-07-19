@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Janguard Cybersecurity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <nav class="custom-navbar">
+        <div class="brand">
+            <img src="img/logo.png" alt="Janguard Logo">
+        </div>
+        <button class="hamburger">&#9776;</button>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="tips.html" class="nav-link">Tips</a>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="register.html" class="register-button">Register</a>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="about-hero">
+            <h1>About Janguard</h1>
+            <p class="tagline">Empowering a Secure Digital Future</p>
+            <div class="background-description justified-center">
+                <p>Janguard is a cybersecurity company committed to protecting digital ecosystems through cutting-edge
+                    security solutions, continuous innovation, and exceptional client service. With a team of experts
+                    and a passion for cyber defense, we provide robust solutions tailored to meet the demands of modern
+                    digital threats.</p>
+            </div>
+        </section>
+
+        <section class="mission-vision-boxes">
+            <div class="mv-box">
+                <h2>Our Mission</h2>
+                <p>Our mission is to provide intelligent, proactive cybersecurity services that empower users and
+                    organizations to protect their data and digital lives. We are committed to educating users,
+                    preventing cyberattacks, and developing reliable tools that adapt to the ever-changing digital
+                    landscape.</p>
+            </div>
+            <div class="mv-box">
+                <h2>Our Vision</h2>
+                <p>We envision a digital world where security is not a luxury but a standard. A future where
+                    everyone — from startups to global enterprises — has access to trustworthy, cutting-edge protection
+                    and the
+                    knowledge to defend themselves against evolving cyber threats.</p>
+            </div>
+        </section>
+
+        <section class="meet-the-team">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>Janyrose Guelas</h3>
+                    <p>Founder & Web Designer</p>
+                </div>
+                <div class="team-card">
+                    <h3>Erinch Pacheco</h3>
+                    <p>Lead Security Analyst</p>
+                </div>
+                <div class="team-card">
+                    <h3>Jane Reyes</h3>
+                    <p>Cybersecurity Consultant</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img id="footer-logo" src="img/logo.png" alt="Footer Logo">
+        <p>&copy; 2025 Janguard Cybersecurity. All rights reserved.</p>
+        <p>Web Designer: Janyrose G. Guelas<br>Email: janyxgarcia@gmail.com</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
